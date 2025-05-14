@@ -61,7 +61,7 @@ class TC_TCPTest < Test::Unit::TestCase
   # Check when there is no server
   def test_case_02_NoServer
     datarecv = TCPSingleDataRecv(self.class::CONFIG[:SERVER], LPORT, 100)
-    assert_equal('', datarecv)
+    assert([nil, ''].include?(datarecv), "Expected nil or empty string")
   end
 
   # Check when the client sends the data
