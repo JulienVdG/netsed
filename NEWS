@@ -1,3 +1,7 @@
+2025-05-15; netsed 1.4:
+  - fix from debian package thanks Andreas Tille
+    - Accept nil and "" as test result
+
 2019-01-06; netsed 1.3:
   - fix from debian package thanks Mats Erik Anersson:
     - Build failure during test phase. (ie fix uninitialized alloc)
